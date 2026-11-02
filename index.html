@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- Declares this document as HTML5 -->
+<html lang="en">
+<!-- Root element of the page; lang="en" tells browsers/screen readers the content is in English -->
+<head>
+<!-- Head section: holds metadata, not visible content -->
+  <meta charset="UTF-8">
+  <!-- Sets character encoding so special characters display correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the page render correctly on mobile devices instead of a shrunk desktop view -->
+  <title>Langa Electronics & Cell Phone Repairs | Scottburgh</title>
+  <!-- Text shown in the browser tab and used as the page title in search results -->
+  <meta name="description" content="Fast, affordable phone, laptop and computer repairs in Scottburgh, KZN South Coast.">
+  <!-- Short summary used by search engines -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Links this page to the external CSS file that controls its visual styling -->
+</head>
+<body>
+<!-- Body section: everything visible on the page goes inside here -->
+
+  <!-- Site header with logo/business name -->
+  <header>
+  <!-- Page header, shown on every page -->
+    <h1>Langa Electronics & Cell Phone Repairs</h1>
+    <!-- Main heading of the site -->
+  </header>
+
+  <!-- Main navigation menu, present on every page -->
+  <nav>
+  <!-- Navigation section containing the site's main menu -->
+    <ul>
+    <!-- Unordered list used to structure the nav links -->
+      <li><a href="index.html">Home</a></li>
+      <!-- Links to this current page (Home) -->
+      <li><a href="about.html">About</a></li>
+      <!-- Links to the About page -->
+      <li><a href="services.html">Services</a></li>
+      <!-- Links to the services page -->
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <!-- Links to the enquiry/quote form page -->
+      <li><a href="contact.html">Contact</a></li>
+      <!-- Links to the contact page -->
+    </ul>
+  </nav>
+
+  <main>
+  <!-- Main content wrapper for this page -->
+
+    <!-- Hero section: main banner image, headline, and call to action -->
+    <section class="hero">
+    <!-- Section for the large intro banner at the top of the homepage -->
+      <img src="images/hero-repair-workshop.jpg" alt="Technician repairing a smartphone at Langa Electronics workshop">
+      <!-- Main banner image; alt text describes the image for screen readers and shows if the image fails to load -->
+      <h2>Fast, Reliable Repairs for Your Phone, Laptop & Computer</h2>
+      <!-- Main headline of the hero section -->
+      <p>Langa Electronics & Cell Phone Repairs keeps Scottburgh connected — affordable, honest repairs on smartphones, laptops, tablets, and desktop computers.</p>
+      <!-- Supporting paragraph beneath the headline -->
+      <a href="enquiry.html" class="cta-button">Get a Free Quote</a>
+      <!-- Call-to-action button/link, styled via the "cta-button" class, sends visitors to the enquiry form -->
+    </section>
+
+    <!-- Brief introduction to the business -->
+    <section class="intro">
+    <!-- Section giving a short overview of the business -->
+      <h2>Why Choose Us</h2>
+      <!-- Sub-heading for this section -->
+      <p>Based in Scottburgh on the KZN South Coast, Langa Electronics & Cell Phone Repairs has built a reputation for fast turnaround, fair pricing, and honest service. Whether it's a cracked screen, a laptop that won't switch on, or a slow computer in need of a clean-up, our team gets you back up and running quickly.</p>
+      <!-- Paragraph summarising the business's reputation and value -->
+    </section>
+
+    <!-- Preview of top 3 services, linking through to the full services page -->
+    <section class="services-preview">
+    <!-- Section showing a short preview of services, styled via "services-preview" class -->
+      <h2>Our Services</h2>
+      <!-- Sub-heading for this section -->
+
+      <article class="service-card">
+      <!-- Self-contained block for one service: Smartphone Repairs -->
+        <img src="images/icon-androids2.jpg" alt="Smartphone repair icon">
+        <!-- Icon image representing smartphone repairs -->
+        <h3>Smartphone Repairs</h3>
+        <!-- Service name -->
+        <p>Screen replacements, battery swaps, and charging port fixes for all major brands.</p>
+        <!-- Short description of this service -->
+      </article>
+
+      <article class="service-card">
+      <!-- Self-contained block for one service: Laptop Repairs -->
+        <img src="images/icon-laptop.jpg" alt="Laptop repair icon">
+        <!-- Icon image representing laptop repairs -->
+        <h3>Laptop Repairs</h3>
+        <!-- Service name -->
+        <p>Hardware diagnostics, screen and keyboard replacement, and overheating fixes.</p>
+        <!-- Short description of this service -->
+      </article>
+
+      <article class="service-card">
+      <!-- Self-contained block for one service: Computer Maintenance -->
+        <img src="images/icon-computer.jpg" alt="Computer maintenance icon">
+        <!-- Icon image representing computer maintenance -->
+        <h3>Computer Maintenance</h3>
+        <!-- Service name -->
+        <p>Cleaning, upgrades, and servicing to keep your desktop running smoothly.</p>
+        <!-- Short description of this service -->
+      </article>
+
+      <p><a href="services.html">See all services →</a></p>
+      <!-- Link to the full services page for the complete list -->
+    </section>
+
+    <!-- Gallery: thumbnails are built by js/main.js; click one to open the lightbox -->
+    <section class="gallery">
+      <h2>Our Work</h2>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- Site footer with contact info and copyright -->
+  <footer>
+  <!-- Page footer, shown on every page -->
+    <p>Scottburgh, KZN South Coast | Mon–Fri 08:00–17:00, Sat 08:00–13:00</p>
+    <!-- Business location and opening hours -->
+    <p>&copy; 2026 Langa Electronics & Cell Phone Repairs. All rights reserved.</p>
+    <!-- Copyright notice; &copy; renders the © symbol -->
+  </footer>
+
+  <!-- Part 3: gallery, lightbox and animations -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+<!-- Closes the html document -->

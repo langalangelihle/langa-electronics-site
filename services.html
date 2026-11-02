@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Declares this document as HTML5 -->
+<html lang="en">
+<!-- Root element of the page; lang="en" tells browsers/screen readers the content is in English -->
+<head>
+<!-- Head section: holds metadata, not visible content -->
+  <meta charset="UTF-8">
+  <!-- Sets character encoding so special characters display correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the page render correctly on mobile devices instead of a shrunk desktop view -->
+  <title>Our Services | Langa Electronics & Cell Phone Repairs</title>
+  <!-- Text shown in the browser tab and used as the page title in search results -->
+  <meta name="description" content="Full list of repair and maintenance services offered by Langa Electronics & Cell Phone Repairs.">
+  <!-- Short summary used by search engines -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Links this page to the external CSS file that controls its visual styling -->
+</head>
+<body>
+<!-- Body section: everything visible on the page goes inside here -->
+
+  <header>
+  <!-- Page header, shown on every page -->
+    <h1>Langa Electronics & Cell Phone Repairs</h1>
+    <!-- Main heading of the site -->
+  </header>
+
+  <nav>
+  <!-- Navigation section containing the site's main menu -->
+    <ul>
+    <!-- Unordered list used to structure the nav links -->
+      <li><a href="index.html">Home</a></li>
+      <!-- Links to the homepage -->
+      <li><a href="about.html">About</a></li>
+      <!-- Links to the About page -->
+      <li><a href="services.html">Services</a></li>
+      <!-- Links to this current page (Services) -->
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <!-- Links to the enquiry/quote form page -->
+      <li><a href="contact.html">Contact</a></li>
+      <!-- Links to the contact page -->
+    </ul>
+  </nav>
+
+  <main>
+  <!-- Main content wrapper for this page -->
+
+    <section class="page-heading">
+    <!-- Section for the page's title/intro heading -->
+      <h2>Our Services</h2>
+      <!-- Secondary heading, introduces the page's topic -->
+      <p>Below is the full list of repair and maintenance services we offer.</p>
+      <!-- Short intro paragraph -->
+    </section>
+
+    <!-- Live search: filters the service cards as the visitor types (js/main.js) -->
+    <div class="search-bar">
+      <label for="serviceSearch">Search services</label>
+      <input type="search" id="serviceSearch" placeholder="e.g. screen, laptop, virus">
+    </div>
+    <p id="noResults" class="no-results" hidden>No services match your search.</p>
+
+    <!-- Full list of 8 services, each as its own article -->
+    <section class="services-list">
+    <!-- Section wrapping all 8 service listings, styled via "services-list" class -->
+
+      <article class="service-item">
+      <!-- Self-contained block for one service: Smartphone Repairs -->
+        <img src="images/pexels-471572265-android-broken-screen.jpg" alt="Smartphone icon">
+        <!-- Image representing smartphone repairs -->
+        <h3>Smartphone Repairs</h3>
+        <!-- Service name -->
+        <p>Screen replacements, battery swaps, charging port fixes, and general troubleshooting for all major phone brands.</p>
+        <!-- Description of this service -->
+      </article>
+
+      <article class="service-item">
+      <!-- Self-contained block for one service: Laptop Repairs -->
+        <img src="images/pexels-thefullonmonet-brokenlaptop.jpg" alt="Laptop icon">
+        <!-- Image representing laptop repairs -->
+        <h3>Laptop Repairs</h3>
+        <!-- Service name -->
+        <p>Hardware diagnostics, screen and keyboard replacement, overheating fixes, and hinge repairs.</p>
+        <!-- Description of this service -->
+      </article>
+
+      <article class="service-item">
+      <!-- Self-contained block for one service: Computer Maintenance -->
+        <img src="images/icon-computer.jpg" alt="Computer icon">
+        <!-- Image representing computer maintenance -->
+        <h3>Computer Maintenance</h3>
+        <!-- Service name -->
+        <p>Cleaning, upgrades, hard drive replacement, and general servicing to keep your desktop running smoothly.</p>
+        <!-- Description of this service -->
+      </article>
+
+      <article class="service-item">
+      <!-- Self-contained block for one service: Screen Replacement -->
+        <img src="images/pexels-471572265-android-broken-screen.jpg" alt="Screen icon">
+        <!-- Reuses the same broken-screen image used for Smartphone Repairs above -->
+        <h3>Screen Replacement</h3>
+        <!-- Service name -->
+        <p>Fast, affordable screen swaps for phones, tablets, and laptops.</p>
+        <!-- Description of this service -->
+      </article>
+
+      <article class="service-item">
+      <!-- Self-contained block for one service: Phone Unlocking -->
+        <img src="images/pexels-kelvin809-android-unlocking.jpg" alt="Phone unlocking icon">
+        <!-- Image representing phone unlocking -->
+        <h3>Phone Unlocking</h3>
+        <!-- Service name -->
+        <p>Network unlocking services for eligible devices.</p>
+        <!-- Description of this service -->
+      </article>
+
+      <article class="service-item">
+      <!-- Self-contained block for one service: Computer Accessories -->
+        <img src="images/service-accessories1.jpg" alt="Accessories icon">
+        <!-- Image representing accessories for sale -->
+        <h3>Computer & cellphone Accessories</h3>
+        <!-- Service name -->
+        <p>Chargers, earphones, power banks, phone covers, and screen protectors available in-store.</p>
+        <!-- Description of this service -->
+      </article>
+
+      <article class="service-item">
+      <!-- Self-contained block for one service: Software Installation -->
+        <img src="images/windows-installation.png" alt="Software installation icon">
+        <!-- Image representing software/OS installation -->
+        <h3>Software Installation</h3>
+        <!-- Service name -->
+        <p>Operating system installs, reinstalls, and essential software setup.</p>
+        <!-- Description of this service -->
+      </article>
+
+      <article class="service-item">
+      <!-- Self-contained block for one service: Virus Removal -->
+        <img src="images/virus.jpg" alt="Virus removal icon">
+        <!-- Image representing virus/malware removal -->
+        <h3>Virus Removal</h3>
+        <!-- Service name -->
+        <p>Full malware and virus scans and removal to protect your device and data.</p>
+        <!-- Description of this service -->
+      </article>
+
+    </section>
+
+    <!-- FAQ accordion: opens/closes via js/main.js -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+
+        <button type="button" class="accordion-header" aria-expanded="false">How long does a repair take?</button>
+        <div class="accordion-panel" hidden>
+          <p>Most phone repairs take 1-2 days. Laptops and desktops can take 2-5 days depending on parts.</p>
+        </div>
+
+        <button type="button" class="accordion-header" aria-expanded="false">Do you offer a warranty?</button>
+        <div class="accordion-panel" hidden>
+          <p>Yes, repairs come with a limited warranty on parts and labour. Ask in store for details.</p>
+        </div>
+
+        <button type="button" class="accordion-header" aria-expanded="false">Can I drop my device off in Park Rynie?</button>
+        <div class="accordion-panel" hidden>
+          <p>Yes, we have a drop-off point in Park Rynie. See the Contact page for details.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <p><a href="enquiry.html">Enquire about a service →</a></p>
+    <!-- Link back to the enquiry form for visitors ready to book a service -->
+
+  </main>
+
+  <footer>
+  <!-- Page footer, shown on every page -->
+    <p>Scottburgh, KZN South Coast | Mon–Fri 08:00–17:00, Sat 08:00–13:00</p>
+    <!-- Business location and opening hours -->
+    <p>&copy; 2026 Langa Electronics & Cell Phone Repairs. All rights reserved.</p>
+    <!-- Copyright notice; &copy; renders the © symbol -->
+  </footer>
+
+  <!-- Part 3: accordion, search and animations -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+<!-- Closes the html document -->

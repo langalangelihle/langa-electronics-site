@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Declares this document as HTML5 -->
+<html lang="en">
+<!-- Root element of the page; lang="en" tells browsers/screen readers the content is in English -->
+<head>
+<!-- Head section: holds metadata, not visible content -->
+  <meta charset="UTF-8">
+  <!-- Sets character encoding so special characters (like &, —, ') display correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the page render correctly on mobile devices instead of a shrunk desktop view -->
+  <title>Contact Us | Langa Electronics & Cell Phone Repairs</title>
+  <!-- Text shown in the browser tab and used as the page title in search results -->
+  <meta name="description" content="Contact Langa Electronics & Cell Phone Repairs in Scottburgh, KZN South Coast.">
+  <!-- Short summary used by search engines (e.g. Google search result snippet) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Links this page to the external CSS file that controls its visual styling -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <!-- Leaflet map library stylesheet (Part 3 interactive map) -->
+</head>
+<body>
+<!-- Body section: everything visible on the page goes inside here -->
+
+  <header>
+  <!-- Page header, typically holds the site name/logo, shown on every page -->
+    <h1>Langa Electronics & Cell Phone Repairs</h1>
+    <!-- Main heading of the site; there should only be one <h1> per page -->
+  </header>
+
+  <nav>
+  <!-- Navigation section containing the site's main menu -->
+    <ul>
+    <!-- Unordered list used to structure the nav links -->
+      <li><a href="index.html">Home</a></li>
+      <!-- Links to the homepage -->
+      <li><a href="about.html">About</a></li>
+      <!-- Links to the About page -->
+      <li><a href="services.html">Services</a></li>
+      <!-- Links to the services page -->
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <!-- Links to the enquiry/quote form page -->
+      <li><a href="contact.html">Contact</a></li>
+      <!-- Links to this current page (Contact) -->
+    </ul>
+  </nav>
+
+  <main>
+  <!-- Main content wrapper; holds the primary content unique to this page -->
+
+    <section class="page-heading">
+    <!-- Section for the page's title/intro heading, styled via the "page-heading" class -->
+      <h2>Contact Us</h2>
+      <!-- Secondary heading, introduces the page's topic -->
+      <p>We're based in Scottburgh, KZN South Coast. Drop by, give us a call, or send a message using the form below.</p>
+      <!-- Short intro paragraph explaining how to get in touch -->
+    </section>
+
+    <!-- Location 1: Main branch -->
+    <section class="location">
+    <!-- Section describing the main branch location, styled via "location" class -->
+      <h3>Main Branch — Scottburgh</h3>
+      <!-- Sub-heading naming this location -->
+      <p>Phone: [061-498-5416] | Email: [lsphesihle57@gmail.com]</p>
+      <!-- Placeholder text — replace with real phone number and email before publishing -->
+    </section>
+
+    <!-- Location 2: Drop-off point -->
+    <section class="location">
+    <!-- Section describing the second location (drop-off point), reuses the "location" class -->
+      <h3>Drop-Off Point — Park Rynie</h3>
+      <!-- Sub-heading naming this location -->
+      <p>Phone: [061-498-5416]</p>
+      <!-- Placeholder text — replace with real phone number before publishing -->
+    </section>
+
+    <!-- Interactive Leaflet map showing both locations (built by js/map.js) -->
+    <section class="map-section">
+      <h3>Find Us on the Map</h3>
+      <div id="map" aria-label="Map showing our Scottburgh branch and Park Rynie drop-off point"></div>
+    </section>
+
+    <!-- General contact form -->
+    <section class="contact-form-section">
+    <!-- Section wrapping the contact form -->
+      <h3>Send Us a Message</h3>
+      <!-- Sub-heading introducing the form -->
+      <form class="contact-form" id="contactForm" novalidate>
+      <!-- Validated by js/contact.js; on success the details are compiled into an email -->
+
+        <label for="c-fullname">Full Name</label>
+        <input type="text" id="c-fullname" name="c-fullname" required>
+        <span class="error" id="c-fullname-error"></span>
+
+        <label for="c-email">Email Address</label>
+        <input type="email" id="c-email" name="c-email" required>
+        <span class="error" id="c-email-error"></span>
+
+        <label for="c-phone">Contact Number</label>
+        <input type="tel" id="c-phone" name="c-phone" required>
+        <span class="error" id="c-phone-error"></span>
+
+        <label for="c-subject">Type of Message</label>
+        <select id="c-subject" name="c-subject" required>
+          <option value="">-- Select an option --</option>
+          <option value="General Enquiry">General Enquiry</option>
+          <option value="Support Query">Support Query</option>
+          <option value="Feedback">Feedback</option>
+        </select>
+        <span class="error" id="c-subject-error"></span>
+
+        <label for="c-message">Message</label>
+        <textarea id="c-message" name="c-message" rows="5" maxlength="500" required></textarea>
+        <small id="c-count">0 / 500</small>
+        <span class="error" id="c-message-error"></span>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+      <!-- Status message shown after sending -->
+      <div id="contactResult" class="form-result" hidden></div>
+    </section>
+
+  </main>
+
+  <footer>
+  <!-- Page footer, shown on every page with contact/business hours and copyright -->
+    <p>Scottburgh, KZN South Coast | Mon–Fri 08:00–17:00, Sat 08:00–13:00</p>
+    <!-- Business location and opening hours -->
+    <p>&copy; 2026 Langa Electronics & Cell Phone Repairs. All rights reserved.</p>
+    <!-- Copyright notice; &copy; renders the © symbol -->
+  </footer>
+
+  <!-- Part 3: Leaflet library, map setup, then contact form validation -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+</html>
+<!-- Closes the html document -->

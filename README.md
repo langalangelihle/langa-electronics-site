@@ -6,6 +6,10 @@
 - **Module:** WEDE5020 – Web Development (Introduction)
 - **Submission:** Individual
 
+##Project links
+- LIVE: https://langalangelihle.github.io/langa-electronics-site/
+- Git files: https://github.com/langalangelihle/langa-electronics-site
+
 ## Project Overview
 This project is a website built for Langa Electronics & Cell Phone Repairs, a small
 local business in Scottburgh, KwaZulu-Natal South Coast, offering repair services

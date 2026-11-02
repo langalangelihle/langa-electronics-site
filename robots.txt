@@ -1,0 +1,6 @@
+# robots.txt - tells search engine crawlers what they may visit
+User-agent: *
+Allow: /
+
+# Location of the sitemap
+Sitemap: https://langalangelihle.github.io/langa-electronics-site/sitemap.xml

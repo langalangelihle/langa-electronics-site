@@ -7,13 +7,56 @@
   <meta charset="UTF-8">
   <!-- Sets character encoding so special characters display correctly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Makes the page render correctly on mobile devices instead of a shrunk desktop view -->
-  <title>Langa Electronics & Cell Phone Repairs | Scottburgh</title>
-  <!-- Text shown in the browser tab and used as the page title in search results -->
-  <meta name="description" content="Fast, affordable phone, laptop and computer repairs in Scottburgh, KZN South Coast.">
-  <!-- Short summary used by search engines -->
+  <!-- Makes the page render correctly on mobile devices (mobile-friendly SEO signal) -->
+  <title>Phone &amp; Laptop Repairs Scottburgh | Langa Electronics</title>
+  <!-- Title tag: unique per page, under 60 characters, keyword first; shown in browser tab and Google results -->
+  <meta name="description" content="Fast, affordable phone, laptop and computer repairs in Scottburgh, KZN South Coast. Screen replacement, virus removal and more. Get a free quote.">
+  <!-- Meta description: under 155 characters; the snippet shown under the title in search results -->
+  <meta name="keywords" content="phone repairs Scottburgh, laptop repairs KZN South Coast, computer repairs, cell phone repair, screen replacement, virus removal">
+  <!-- Target keywords for this page (also used naturally in the headings and body text) -->
+  <meta name="author" content="Langa Electronics &amp; Cell Phone Repairs">
+  <!-- Author/business name -->
+  <meta name="robots" content="index, follow">
+  <!-- Allows search engines to index this page and follow its links -->
+  <link rel="canonical" href="https://langalangelihle.github.io/langa-electronics-site/index.html">
+  <!-- Canonical URL: tells search engines this is the main address of the page -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Langa Electronics &amp; Cell Phone Repairs | Scottburgh">
+  <meta property="og:description" content="Fast, affordable phone, laptop and computer repairs in Scottburgh, KZN South Coast. Screen replacement, virus removal and more. Get a free quote.">
+  <meta property="og:url" content="https://langalangelihle.github.io/langa-electronics-site/index.html">
+  <meta property="og:image" content="https://langalangelihle.github.io/langa-electronics-site/images/hero-repair-workshop.jpg">
+  <meta property="og:locale" content="en_ZA">
+  <!-- Open Graph tags: control how the page looks when shared on Facebook, WhatsApp, LinkedIn etc. -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Twitter/X share card -->
+  <meta name="theme-color" content="#0b5394">
+  <!-- Browser toolbar colour on mobile (matches the site's primary blue) -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Links this page to the external CSS file that controls its visual styling -->
+  <!-- Structured data (JSON-LD): helps Google show business details and supports local search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Langa Electronics & Cell Phone Repairs",
+    "description": "Phone, laptop and computer repairs in Scottburgh, KZN South Coast.",
+    "url": "https://langalangelihle.github.io/langa-electronics-site/",
+    "image": "https://langalangelihle.github.io/langa-electronics-site/images/hero-repair-workshop.jpg",
+    "telephone": "+27614985416",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Scottburgh",
+      "addressRegion": "KwaZulu-Natal",
+      "addressCountry": "ZA"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -30.2869, "longitude": 30.7536 },
+    "areaServed": ["Scottburgh", "Park Rynie", "KZN South Coast"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+    ]
+  }
+  </script>
 </head>
 <body>
 <!-- Body section: everything visible on the page goes inside here -->
@@ -21,8 +64,8 @@
   <!-- Site header with logo/business name -->
   <header>
   <!-- Page header, shown on every page -->
-    <h1>Langa Electronics & Cell Phone Repairs</h1>
-    <!-- Main heading of the site -->
+    <p class="site-title">Langa Electronics & Cell Phone Repairs</p>
+    <!-- Site name (styled paragraph) so the page heading below can be the single H1 for SEO -->
   </header>
 
   <!-- Main navigation menu, present on every page -->
@@ -49,9 +92,9 @@
     <!-- Hero section: main banner image, headline, and call to action -->
     <section class="hero">
     <!-- Section for the large intro banner at the top of the homepage -->
-      <img src="images/hero-repair-workshop.jpg" alt="Technician repairing a smartphone at Langa Electronics workshop">
+      <img src="images/hero-repair-workshop.jpg" alt="Technician repairing a smartphone at the Langa Electronics workshop in Scottburgh" fetchpriority="high">
       <!-- Main banner image; alt text describes the image for screen readers and shows if the image fails to load -->
-      <h2>Fast, Reliable Repairs for Your Phone, Laptop & Computer</h2>
+      <h1>Fast, Reliable Phone, Laptop & Computer Repairs in Scottburgh</h1>
       <!-- Main headline of the hero section -->
       <p>Langa Electronics & Cell Phone Repairs keeps Scottburgh connected — affordable, honest repairs on smartphones, laptops, tablets, and desktop computers.</p>
       <!-- Supporting paragraph beneath the headline -->
@@ -64,7 +107,7 @@
     <!-- Section giving a short overview of the business -->
       <h2>Why Choose Us</h2>
       <!-- Sub-heading for this section -->
-      <p>Based in Scottburgh on the KZN South Coast, Langa Electronics & Cell Phone Repairs has built a reputation for fast turnaround, fair pricing, and honest service. Whether it's a cracked screen, a laptop that won't switch on, or a slow computer in need of a clean-up, our team gets you back up and running quickly.</p>
+      <p>Based in Scottburgh on the KZN South Coast, Langa Electronics & Cell Phone Repairs has built a reputation for fast turnaround, fair pricing, and honest service. Whether it's a cracked screen, a laptop that won't switch on, or a slow computer in need of a clean-up, our team gets you back up and running quickly. Learn <a href="about.html">more about us</a> or <a href="enquiry.html">request a repair quote</a>.</p>
       <!-- Paragraph summarising the business's reputation and value -->
     </section>
 
@@ -76,7 +119,7 @@
 
       <article class="service-card">
       <!-- Self-contained block for one service: Smartphone Repairs -->
-        <img src="images/icon-androids2.jpg" alt="Smartphone repair icon">
+        <img src="images/icon-androids2.jpg" alt="Android smartphones representing our phone repair service" loading="lazy">
         <!-- Icon image representing smartphone repairs -->
         <h3>Smartphone Repairs</h3>
         <!-- Service name -->
@@ -86,7 +129,7 @@
 
       <article class="service-card">
       <!-- Self-contained block for one service: Laptop Repairs -->
-        <img src="images/icon-laptop.jpg" alt="Laptop repair icon">
+        <img src="images/icon-laptop.jpg" alt="Laptop representing our laptop repair service" loading="lazy">
         <!-- Icon image representing laptop repairs -->
         <h3>Laptop Repairs</h3>
         <!-- Service name -->
@@ -96,7 +139,7 @@
 
       <article class="service-card">
       <!-- Self-contained block for one service: Computer Maintenance -->
-        <img src="images/icon-computer.jpg" alt="Computer maintenance icon">
+        <img src="images/icon-computer.jpg" alt="Desktop computer representing our computer maintenance service" loading="lazy">
         <!-- Icon image representing computer maintenance -->
         <h3>Computer Maintenance</h3>
         <!-- Service name -->
@@ -126,7 +169,7 @@
   </footer>
 
   <!-- Part 3: gallery, lightbox and animations -->
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 
 </body>
 </html>

@@ -5,25 +5,44 @@
 <head>
 <!-- Head section: holds metadata, not visible content -->
   <meta charset="UTF-8">
-  <!-- Sets character encoding so special characters (like &, —, ') display correctly -->
+  <!-- Sets character encoding so special characters display correctly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Makes the page render correctly on mobile devices instead of a shrunk desktop view -->
-  <title>Contact Us | Langa Electronics & Cell Phone Repairs</title>
-  <!-- Text shown in the browser tab and used as the page title in search results -->
-  <meta name="description" content="Contact Langa Electronics & Cell Phone Repairs in Scottburgh, KZN South Coast.">
-  <!-- Short summary used by search engines (e.g. Google search result snippet) -->
+  <!-- Makes the page render correctly on mobile devices (mobile-friendly SEO signal) -->
+  <title>Contact Us | Langa Electronics Scottburgh, KZN</title>
+  <!-- Title tag: unique per page, under 60 characters, keyword first; shown in browser tab and Google results -->
+  <meta name="description" content="Visit Langa Electronics in Scottburgh or our Park Rynie drop-off point. Find phone, email, opening hours and a map, or send us a message.">
+  <!-- Meta description: under 155 characters; the snippet shown under the title in search results -->
+  <meta name="keywords" content="contact Langa Electronics, phone repair Scottburgh, Park Rynie drop-off, repair shop opening hours">
+  <!-- Target keywords for this page (also used naturally in the headings and body text) -->
+  <meta name="author" content="Langa Electronics &amp; Cell Phone Repairs">
+  <!-- Author/business name -->
+  <meta name="robots" content="index, follow">
+  <!-- Allows search engines to index this page and follow its links -->
+  <link rel="canonical" href="https://langalangelihle.github.io/langa-electronics-site/contact.html">
+  <!-- Canonical URL: tells search engines this is the main address of the page -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Langa Electronics | Scottburgh, KZN">
+  <meta property="og:description" content="Visit Langa Electronics in Scottburgh or our Park Rynie drop-off point. Find phone, email, opening hours and a map, or send us a message.">
+  <meta property="og:url" content="https://langalangelihle.github.io/langa-electronics-site/contact.html">
+  <meta property="og:image" content="https://langalangelihle.github.io/langa-electronics-site/images/hero-repair-workshop.jpg">
+  <meta property="og:locale" content="en_ZA">
+  <!-- Open Graph tags: control how the page looks when shared on Facebook, WhatsApp, LinkedIn etc. -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Twitter/X share card -->
+  <meta name="theme-color" content="#0b5394">
+  <!-- Browser toolbar colour on mobile (matches the site's primary blue) -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Links this page to the external CSS file that controls its visual styling -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <!-- Leaflet map library stylesheet (Part 3 interactive map) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <!-- Leaflet map stylesheet; integrity (SRI) makes the browser reject the file if it was tampered with -->
 </head>
 <body>
 <!-- Body section: everything visible on the page goes inside here -->
 
   <header>
   <!-- Page header, typically holds the site name/logo, shown on every page -->
-    <h1>Langa Electronics & Cell Phone Repairs</h1>
-    <!-- Main heading of the site; there should only be one <h1> per page -->
+    <p class="site-title">Langa Electronics & Cell Phone Repairs</p>
+    <!-- Site name (styled paragraph) so the page heading below can be the single H1 for SEO -->
   </header>
 
   <nav>
@@ -48,16 +67,16 @@
 
     <section class="page-heading">
     <!-- Section for the page's title/intro heading, styled via the "page-heading" class -->
-      <h2>Contact Us</h2>
+      <h1>Contact Langa Electronics in Scottburgh</h1>
       <!-- Secondary heading, introduces the page's topic -->
-      <p>We're based in Scottburgh, KZN South Coast. Drop by, give us a call, or send a message using the form below.</p>
+      <p>We're based in Scottburgh, KZN South Coast. Drop by, give us a call, or send a message using the form below. Want a price? Use our <a href="enquiry.html">repair enquiry form</a>.</p>
       <!-- Short intro paragraph explaining how to get in touch -->
     </section>
 
     <!-- Location 1: Main branch -->
     <section class="location">
     <!-- Section describing the main branch location, styled via "location" class -->
-      <h3>Main Branch — Scottburgh</h3>
+      <h2>Main Branch — Scottburgh</h2>
       <!-- Sub-heading naming this location -->
       <p>Phone: [061-498-5416] | Email: [lsphesihle57@gmail.com]</p>
       <!-- Placeholder text — replace with real phone number and email before publishing -->
@@ -66,7 +85,7 @@
     <!-- Location 2: Drop-off point -->
     <section class="location">
     <!-- Section describing the second location (drop-off point), reuses the "location" class -->
-      <h3>Drop-Off Point — Park Rynie</h3>
+      <h2>Drop-Off Point — Park Rynie</h2>
       <!-- Sub-heading naming this location -->
       <p>Phone: [061-498-5416]</p>
       <!-- Placeholder text — replace with real phone number before publishing -->
@@ -74,14 +93,14 @@
 
     <!-- Interactive Leaflet map showing both locations (built by js/map.js) -->
     <section class="map-section">
-      <h3>Find Us on the Map</h3>
+      <h2>Find Us on the Map</h2>
       <div id="map" aria-label="Map showing our Scottburgh branch and Park Rynie drop-off point"></div>
     </section>
 
     <!-- General contact form -->
     <section class="contact-form-section">
     <!-- Section wrapping the contact form -->
-      <h3>Send Us a Message</h3>
+      <h2>Send Us a Message</h2>
       <!-- Sub-heading introducing the form -->
       <form class="contact-form" id="contactForm" novalidate>
       <!-- Validated by js/contact.js; on success the details are compiled into an email -->
@@ -131,9 +150,9 @@
   </footer>
 
   <!-- Part 3: Leaflet library, map setup, then contact form validation -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/contact.js"></script>
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="js/map.js"></script>
+  <script defer src="js/contact.js"></script>
 
 </body>
 </html>

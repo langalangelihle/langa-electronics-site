@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const extra = express ? 150 : 0;
 
     result.innerHTML = "";
-    const h = document.createElement("h3");
+    const h = document.createElement("h2");
     h.textContent = "Thanks, " + form.fullname.value.trim() + "!";
     const p1 = document.createElement("p");
     p1.textContent = "Estimated cost: R" + (p.from + extra) + " - R" + (p.to + extra) +

@@ -5,13 +5,32 @@
 <head>
 <!-- Head section: holds metadata, not visible content -->
   <meta charset="UTF-8">
-  <!-- Sets character encoding so special characters (like &, —, é) display correctly -->
+  <!-- Sets character encoding so special characters display correctly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Makes the page render correctly on mobile devices instead of a shrunk desktop view -->
-  <title>About Us | Langa Electronics & Cell Phone Repairs</title>
-  <!-- Text shown in the browser tab and used as the page title in search results -->
-  <meta name="description" content="Learn about Langa Electronics & Cell Phone Repairs, our history, mission and vision.">
-  <!-- Short summary used by search engines (e.g. Google search result snippet) -->
+  <!-- Makes the page render correctly on mobile devices (mobile-friendly SEO signal) -->
+  <title>About Us | Langa Electronics &amp; Cell Phone Repairs</title>
+  <!-- Title tag: unique per page, under 60 characters, keyword first; shown in browser tab and Google results -->
+  <meta name="description" content="Learn the story, mission and vision behind Langa Electronics &amp; Cell Phone Repairs, Scottburgh's trusted phone and computer repair shop.">
+  <!-- Meta description: under 155 characters; the snippet shown under the title in search results -->
+  <meta name="keywords" content="about Langa Electronics, phone repair shop Scottburgh, electronics repair KZN, mission and vision">
+  <!-- Target keywords for this page (also used naturally in the headings and body text) -->
+  <meta name="author" content="Langa Electronics &amp; Cell Phone Repairs">
+  <!-- Author/business name -->
+  <meta name="robots" content="index, follow">
+  <!-- Allows search engines to index this page and follow its links -->
+  <link rel="canonical" href="https://langalangelihle.github.io/langa-electronics-site/about.html">
+  <!-- Canonical URL: tells search engines this is the main address of the page -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Langa Electronics &amp; Cell Phone Repairs">
+  <meta property="og:description" content="Learn the story, mission and vision behind Langa Electronics &amp; Cell Phone Repairs, Scottburgh's trusted phone and computer repair shop.">
+  <meta property="og:url" content="https://langalangelihle.github.io/langa-electronics-site/about.html">
+  <meta property="og:image" content="https://langalangelihle.github.io/langa-electronics-site/images/hero-repair-workshop.jpg">
+  <meta property="og:locale" content="en_ZA">
+  <!-- Open Graph tags: control how the page looks when shared on Facebook, WhatsApp, LinkedIn etc. -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Twitter/X share card -->
+  <meta name="theme-color" content="#0b5394">
+  <!-- Browser toolbar colour on mobile (matches the site's primary blue) -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Links this page to the external CSS file that controls its visual styling -->
 </head>
@@ -20,8 +39,8 @@
 
   <header>
   <!-- Page header, typically holds the site name/logo, shown on every page -->
-    <h1>Langa Electronics & Cell Phone Repairs</h1>
-    <!-- Main heading of the site; there should only be one <h1> per page -->
+    <p class="site-title">Langa Electronics & Cell Phone Repairs</p>
+    <!-- Site name (styled paragraph) so the page heading below can be the single H1 for SEO -->
   </header>
 
   <nav>
@@ -46,14 +65,14 @@
 
     <section class="page-heading">
     <!-- Section for the page's title/intro heading, styled via the "page-heading" class -->
-      <h2>About Us</h2>
+      <h1>About Langa Electronics & Cell Phone Repairs</h1>
       <!-- Secondary heading, introduces the page's topic -->
     </section>
 
     <!-- Business history -->
     <section class="history">
     <!-- Section containing the company's background story -->
-      <h3>Our Story</h3>
+      <h2>Our Story</h2>
       <!-- Sub-heading for this section -->
       <p>Langa Electronics & Cell Phone Repairs began as a small home-based repair service in Scottburgh, offering basic phone and computer repairs to friends and neighbours. Steady demand and positive word of mouth allowed the business to grow into a walk-in repair shop, now known locally for fast, honest, and affordable repairs on smartphones, laptops, tablets, and desktop computers.</p>
       <!-- Paragraph describing the company's founding and growth -->
@@ -64,7 +83,7 @@
     <!-- Section grouping the mission and vision statements together -->
       <article>
       <!-- Self-contained block of content: the mission statement -->
-        <h3>Our Mission</h3>
+        <h2>Our Mission</h2>
         <!-- Sub-heading for the mission statement -->
         <p>To provide the Scottburgh community with fast, reliable, and affordable repair services — keeping people connected without the cost or inconvenience of replacing their devices.</p>
         <!-- The actual mission statement text -->
@@ -72,12 +91,15 @@
 
       <article>
       <!-- Self-contained block of content: the vision statement -->
-        <h3>Our Vision</h3>
+        <h2>Our Vision</h2>
         <!-- Sub-heading for the vision statement -->
         <p>To become the most trusted electronics and cell phone repair business on the KZN South Coast, recognised for honest pricing, quality workmanship, and excellent customer service.</p>
         <!-- The actual vision statement text -->
       </article>
     </section>
+
+    <!-- Internal links to other pages -->
+    <p>Ready to get your device fixed? Browse our <a href="services.html">repair services</a> or <a href="contact.html">contact us</a> today.</p>
 
   </main>
 
